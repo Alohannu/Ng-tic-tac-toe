@@ -1,0 +1,76 @@
+h3{
+    position: absolute;
+    top: 4%;
+}
+
+.game-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    width: 60%;
+    height: 70%;
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.3));
+    backdrop-filter: blur(0.4rem);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 18px;
+}
+
+.circle,.circle1 {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    backdrop-filter: blur(0.9rem);
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+}
+
+.circle {
+    bottom: 5%;
+    left: 15%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.square {
+    width: 99%;
+    height: 99%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.3));
+    z-index: 1;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    display: flex;
+}
+
+.square:hover {
+    cursor: pointer;
+    backdrop-filter: blur(0.4rem);
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.3));
+
+
+}
+
+.playerO{
+    color: blue;
+}
